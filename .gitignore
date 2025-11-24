@@ -13,6 +13,9 @@ dist/
 .next/
 out/
 
+# Next.js
+next-env.d.ts
+
 # Environment variables
 .env
 .env.local
