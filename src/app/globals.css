@@ -78,6 +78,200 @@ body {
   line-height: 1.8;
 }
 
+/* Stay Connected Section */
+.stay-connected {
+  margin-top: 4rem;
+  padding: 3rem 0;
+}
+
+.stay-connected-container {
+  background: white;
+  padding: 3rem;
+  border-radius: 12px;
+  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.1);
+  border: 2px solid #e9ecef;
+}
+
+.stay-connected-title {
+  font-size: 2rem;
+  font-weight: 700;
+  color: #2c3e50;
+  text-align: center;
+  margin-bottom: 2.5rem;
+  padding-bottom: 1rem;
+  border-bottom: 2px solid #e9ecef;
+}
+
+.stay-connected-section {
+  margin-bottom: 2.5rem;
+  padding-bottom: 2rem;
+  border-bottom: 1px solid #e9ecef;
+}
+
+.stay-connected-section:last-child {
+  margin-bottom: 0;
+  padding-bottom: 0;
+  border-bottom: none;
+}
+
+.section-title {
+  font-size: 1.25rem;
+  font-weight: 600;
+  color: #2c3e50;
+  margin-bottom: 1.5rem;
+}
+
+/* Newsletter Form */
+.newsletter-form {
+  display: flex;
+  gap: 1rem;
+  margin-bottom: 1rem;
+}
+
+.email-input {
+  flex: 1;
+  padding: 0.75rem 1rem;
+  border: 2px solid #e9ecef;
+  border-radius: 6px;
+  font-size: 1rem;
+  transition: border-color 0.2s;
+}
+
+.email-input:focus {
+  outline: none;
+  border-color: #2c3e50;
+}
+
+.subscribe-button {
+  padding: 0.75rem 2rem;
+  background-color: #2c3e50;
+  color: white;
+  border: none;
+  border-radius: 6px;
+  font-size: 1rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background-color 0.2s, transform 0.2s;
+}
+
+.subscribe-button:hover {
+  background-color: #1a252f;
+  transform: translateY(-2px);
+}
+
+.newsletter-benefits {
+  display: flex;
+  gap: 1.5rem;
+  flex-wrap: wrap;
+}
+
+.benefit {
+  color: #6c757d;
+  font-size: 0.95rem;
+}
+
+/* Social Links */
+.social-links {
+  display: flex;
+  gap: 1rem;
+  flex-wrap: wrap;
+}
+
+.social-link {
+  padding: 0.6rem 1.5rem;
+  background-color: #f8f9fa;
+  color: #2c3e50;
+  text-decoration: none;
+  border-radius: 6px;
+  border: 2px solid #e9ecef;
+  font-weight: 500;
+  transition: background-color 0.2s, border-color 0.2s, transform 0.2s;
+}
+
+.social-link:hover {
+  background-color: #2c3e50;
+  color: white;
+  border-color: #2c3e50;
+  transform: translateY(-2px);
+}
+
+/* Discord Channels */
+.discord-channels {
+  display: flex;
+  gap: 1rem;
+  flex-wrap: wrap;
+}
+
+.channel-tag {
+  padding: 0.6rem 1.2rem;
+  background-color: #f8f9fa;
+  color: #495057;
+  border-radius: 6px;
+  font-family: 'Courier New', monospace;
+  font-size: 0.95rem;
+  border: 2px solid #e9ecef;
+}
+
+/* Contact Form */
+.contact-form {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.contact-input,
+.contact-textarea {
+  padding: 0.75rem 1rem;
+  border: 2px solid #e9ecef;
+  border-radius: 6px;
+  font-size: 1rem;
+  font-family: inherit;
+  transition: border-color 0.2s;
+}
+
+.contact-input:focus,
+.contact-textarea:focus {
+  outline: none;
+  border-color: #2c3e50;
+}
+
+.contact-textarea {
+  resize: vertical;
+  min-height: 100px;
+}
+
+.contact-button {
+  padding: 0.75rem 2rem;
+  background-color: #2c3e50;
+  color: white;
+  border: none;
+  border-radius: 6px;
+  font-size: 1rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background-color 0.2s, transform 0.2s;
+  align-self: flex-start;
+}
+
+.contact-button:hover {
+  background-color: #1a252f;
+  transform: translateY(-2px);
+}
+
+/* Status Messages */
+.status-message {
+  padding: 0.75rem 1rem;
+  border-radius: 6px;
+  font-size: 0.95rem;
+  margin-top: 0.5rem;
+}
+
+.status-message.success {
+  background-color: #d4edda;
+  color: #155724;
+  border: 1px solid #c3e6cb;
+}
+
 @media (max-width: 768px) {
   .hero h1 {
     font-size: 2rem;
@@ -93,5 +287,26 @@ body {
 
   .content {
     grid-template-columns: 1fr;
+  }
+
+  .stay-connected-container {
+    padding: 1.5rem;
+  }
+
+  .newsletter-form {
+    flex-direction: column;
+  }
+
+  .subscribe-button,
+  .contact-button {
+    width: 100%;
+  }
+
+  .social-links {
+    flex-direction: column;
+  }
+
+  .social-link {
+    text-align: center;
   }
 }
