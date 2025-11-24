@@ -1,3 +1,5 @@
+import BookCard from '@/components/BookCard'
+
 export default function Home() {
   return (
     <main className="container">
@@ -5,6 +7,9 @@ export default function Home() {
         <h1>La boite à écrire</h1>
         <p className="subtitle">Un espace dédié à l'écriture et à la créativité littéraire</p>
       </div>
+
+      {/* Book Presentation Card */}
+      <BookCard />
 
       <section className="content">
         <div className="card">
