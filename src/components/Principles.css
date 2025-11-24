@@ -1,0 +1,49 @@
+.principles-container {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 2rem 1rem;
+}
+
+.principles-section,
+.faq-section {
+  margin-bottom: 3rem;
+}
+
+.principles-title,
+.faq-title {
+  font-size: 2rem;
+  font-weight: 700;
+  color: #212529;
+  margin-bottom: 0.5rem;
+  text-align: center;
+}
+
+.principles-subtitle,
+.faq-subtitle {
+  font-size: 0.875rem;
+  color: #6c757d;
+  text-align: center;
+  margin-bottom: 1.5rem;
+  font-style: italic;
+}
+
+@media (max-width: 768px) {
+  .principles-container {
+    padding: 1.5rem 1rem;
+  }
+
+  .principles-section,
+  .faq-section {
+    margin-bottom: 2rem;
+  }
+
+  .principles-title,
+  .faq-title {
+    font-size: 1.5rem;
+  }
+
+  .principles-subtitle,
+  .faq-subtitle {
+    font-size: 0.8125rem;
+  }
+}

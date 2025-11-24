@@ -1,3 +1,5 @@
+import Principles from '@/components/Principles';
+
 export default function Home() {
   return (
     <main className="container">
@@ -23,6 +25,8 @@ export default function Home() {
           </p>
         </div>
       </section>
+
+      <Principles />
     </main>
   )
 }
