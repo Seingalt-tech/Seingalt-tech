@@ -1,0 +1,362 @@
+.main {
+  min-height: 100vh;
+  padding-top: 80px;
+}
+
+/* Hero Split Screen Section */
+.hero {
+  position: relative;
+  min-height: 85vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 2rem;
+}
+
+.splitContainer {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  width: 100%;
+  max-width: 1400px;
+  height: 500px;
+  gap: 2px;
+  margin-bottom: 3rem;
+  border-radius: 16px;
+  overflow: hidden;
+  box-shadow: 0 20px 60px rgba(0, 0, 0, 0.2);
+}
+
+.splitLeft,
+.splitRight {
+  position: relative;
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.splitLeft {
+  background: linear-gradient(135deg, #8B7355 0%, #5D4E37 100%);
+}
+
+.splitRight {
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+}
+
+.imageOverlay {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: rgba(0, 0, 0, 0.3);
+  backdrop-filter: blur(1px);
+  transition: all 0.4s ease;
+}
+
+.splitLeft:hover .imageOverlay,
+.splitRight:hover .imageOverlay {
+  background: rgba(0, 0, 0, 0.15);
+  transform: scale(1.05);
+}
+
+.imageContent {
+  text-align: center;
+  color: white;
+  z-index: 2;
+}
+
+.imageContent h3 {
+  font-size: 2.5rem;
+  font-weight: 700;
+  margin-bottom: 0.5rem;
+  text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.5);
+}
+
+.imageContent h4 {
+  font-size: 1.5rem;
+  font-weight: 400;
+  margin-bottom: 1rem;
+  opacity: 0.95;
+  text-shadow: 1px 1px 4px rgba(0, 0, 0, 0.5);
+}
+
+.year {
+  display: inline-block;
+  font-size: 3rem;
+  font-weight: 800;
+  letter-spacing: 2px;
+  opacity: 0.9;
+  text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.5);
+}
+
+/* Hero Message */
+.heroMessage {
+  text-align: center;
+  max-width: 900px;
+  padding: 0 2rem;
+}
+
+.heroTitle {
+  font-size: 3rem;
+  font-weight: 800;
+  color: #2c3e50;
+  margin-bottom: 1rem;
+  line-height: 1.2;
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+.heroSubtitle {
+  font-size: 1.5rem;
+  color: #495057;
+  margin-bottom: 2.5rem;
+  font-weight: 500;
+}
+
+.btnPrimary {
+  display: inline-block;
+  padding: 1.25rem 3rem;
+  font-size: 1.1rem;
+  font-weight: 700;
+  color: white;
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  border: none;
+  border-radius: 50px;
+  text-decoration: none;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  box-shadow: 0 10px 30px rgba(102, 126, 234, 0.3);
+  letter-spacing: 1px;
+}
+
+.btnPrimary:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 15px 40px rgba(102, 126, 234, 0.4);
+}
+
+/* Comparison Section */
+.comparison {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 3rem;
+  max-width: 1200px;
+  margin: 4rem auto;
+  padding: 3rem 2rem;
+}
+
+.compareCard {
+  background: white;
+  padding: 2.5rem;
+  border-radius: 16px;
+  box-shadow: 0 10px 40px rgba(0, 0, 0, 0.08);
+  transition: all 0.3s ease;
+  border: 2px solid transparent;
+}
+
+.compareCard:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 15px 50px rgba(0, 0, 0, 0.12);
+  border-color: #667eea;
+}
+
+.compareYear {
+  font-size: 2.5rem;
+  font-weight: 800;
+  color: #2c3e50;
+  margin-bottom: 1rem;
+}
+
+.compareLine {
+  width: 60px;
+  height: 3px;
+  background: linear-gradient(90deg, #667eea 0%, #764ba2 100%);
+  margin-bottom: 1.5rem;
+}
+
+.compareContent h3 {
+  font-size: 1.8rem;
+  color: #2c3e50;
+  margin-bottom: 0.5rem;
+  font-weight: 700;
+}
+
+.compareWork {
+  font-size: 1.1rem;
+  color: #6c757d;
+  font-style: italic;
+  margin-bottom: 1.5rem;
+}
+
+.compareStatus {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+  padding: 0.75rem 1.25rem;
+  background: #d4edda;
+  border-radius: 8px;
+  width: fit-content;
+}
+
+.statusIcon {
+  font-size: 1.5rem;
+  font-weight: 700;
+  color: #28a745;
+}
+
+.statusText {
+  font-size: 1.1rem;
+  font-weight: 700;
+  color: #28a745;
+  letter-spacing: 1px;
+}
+
+.statusSuspect {
+  background: #fff3cd;
+}
+
+.statusSuspect .statusIcon,
+.statusSuspect .statusText {
+  color: #856404;
+}
+
+/* CTAs Section */
+.ctas {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 2rem;
+  max-width: 1200px;
+  margin: 5rem auto;
+  padding: 2rem;
+}
+
+.ctaButton {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1rem;
+  padding: 2.5rem 2rem;
+  background: white;
+  border-radius: 16px;
+  text-decoration: none;
+  transition: all 0.3s ease;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.08);
+  border: 2px solid transparent;
+}
+
+.ctaButton:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 20px 50px rgba(102, 126, 234, 0.2);
+  border-color: #667eea;
+}
+
+.ctaIcon {
+  font-size: 3rem;
+}
+
+.ctaText {
+  font-size: 1.2rem;
+  font-weight: 700;
+  color: #2c3e50;
+  text-align: center;
+}
+
+/* Responsive */
+@media (max-width: 1024px) {
+  .heroTitle {
+    font-size: 2.2rem;
+  }
+
+  .heroSubtitle {
+    font-size: 1.2rem;
+  }
+
+  .splitContainer {
+    height: 400px;
+  }
+
+  .imageContent h3 {
+    font-size: 2rem;
+  }
+
+  .imageContent h4 {
+    font-size: 1.2rem;
+  }
+
+  .year {
+    font-size: 2.5rem;
+  }
+}
+
+@media (max-width: 768px) {
+  .main {
+    padding-top: 70px;
+  }
+
+  .hero {
+    min-height: auto;
+    padding: 1.5rem 1rem;
+  }
+
+  .splitContainer {
+    grid-template-columns: 1fr;
+    height: auto;
+    gap: 2px;
+  }
+
+  .splitLeft,
+  .splitRight {
+    min-height: 250px;
+  }
+
+  .imageContent h3 {
+    font-size: 1.75rem;
+  }
+
+  .imageContent h4 {
+    font-size: 1.1rem;
+  }
+
+  .year {
+    font-size: 2rem;
+  }
+
+  .heroTitle {
+    font-size: 1.75rem;
+  }
+
+  .heroSubtitle {
+    font-size: 1rem;
+  }
+
+  .btnPrimary {
+    padding: 1rem 2rem;
+    font-size: 1rem;
+  }
+
+  .comparison {
+    grid-template-columns: 1fr;
+    gap: 2rem;
+    padding: 2rem 1rem;
+    margin: 2rem auto;
+  }
+
+  .compareYear {
+    font-size: 2rem;
+  }
+
+  .compareContent h3 {
+    font-size: 1.5rem;
+  }
+
+  .ctas {
+    grid-template-columns: 1fr;
+    gap: 1.5rem;
+    padding: 1.5rem;
+    margin: 3rem auto;
+  }
+}
