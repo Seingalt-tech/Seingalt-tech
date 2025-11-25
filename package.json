@@ -1,8 +1,9 @@
 {
   "name": "la-boite-a-ecrire",
   "version": "0.1.0",
-  "description": "La boite à écrire - Un espace dédié à l'écriture",
+  "description": "La boite à écrire - Plateforme de littérature augmentée",
   "private": true,
+  "license": "MIT",
   "scripts": {
     "dev": "next dev",
     "build": "next build",
@@ -12,7 +13,9 @@
   "dependencies": {
     "next": "^14.0.0",
     "react": "^18.2.0",
-    "react-dom": "^18.2.0"
+    "react-dom": "^18.2.0",
+    "clsx": "^2.1.0",
+    "lucide-react": "^0.344.0"
   },
   "devDependencies": {
     "@types/node": "^20.0.0",
@@ -20,7 +23,10 @@
     "@types/react-dom": "^18.2.0",
     "typescript": "^5.0.0",
     "eslint": "^8.0.0",
-    "eslint-config-next": "^14.0.0"
+    "eslint-config-next": "^14.0.0",
+    "tailwindcss": "^3.4.1",
+    "postcss": "^8.4.35",
+    "autoprefixer": "^10.4.17"
   },
   "engines": {
     "node": ">=18.0.0"
