@@ -1,3 +1,5 @@
+import Link from 'next/link'
+
 export default function Home() {
   return (
     <main className="container">
@@ -8,19 +10,25 @@ export default function Home() {
 
       <section className="content">
         <div className="card">
-          <h2>Bienvenue</h2>
+          <h2>📝 Commencer à écrire</h2>
           <p>
-            Bienvenue dans votre espace d'écriture. Ici, vous pouvez laisser libre cours
-            à votre créativité et explorer l'univers des mots.
+            Laissez libre cours à votre créativité. Créez vos histoires, poèmes,
+            essais ou tout ce qui vous inspire.
           </p>
+          <Link href="/ecrire" className="button">
+            Nouvelle écriture
+          </Link>
         </div>
 
         <div className="card">
-          <h2>Commencer</h2>
+          <h2>📚 Mes écrits</h2>
           <p>
-            Explorez les différentes sections pour découvrir tout ce que La boite à écrire
-            a à vous offrir.
+            Retrouvez et organisez tous vos textes. Suivez votre progression
+            et revisitez vos créations.
           </p>
+          <button className="button secondary" disabled>
+            Bientôt disponible
+          </button>
         </div>
       </section>
     </main>

@@ -1,0 +1,66 @@
+.editorContainer {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  width: 100%;
+  background: #ffffff;
+  border-radius: 8px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+}
+
+.toolbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 12px 20px;
+  background: #f8f9fa;
+  border-bottom: 1px solid #e9ecef;
+}
+
+.stats {
+  display: flex;
+  gap: 24px;
+  font-size: 14px;
+  color: #6c757d;
+}
+
+.stat {
+  display: flex;
+  gap: 4px;
+}
+
+.stat strong {
+  color: #495057;
+  font-weight: 600;
+}
+
+.editor {
+  flex: 1;
+  padding: 24px;
+  border: none;
+  outline: none;
+  font-family: 'Georgia', 'Times New Roman', serif;
+  font-size: 16px;
+  line-height: 1.8;
+  color: #212529;
+  resize: none;
+  background: #ffffff;
+}
+
+.editor::placeholder {
+  color: #adb5bd;
+  font-style: italic;
+}
+
+.editor:focus {
+  background: #ffffff;
+}
+
+/* Style pour une meilleure expérience d'écriture */
+@media (min-width: 768px) {
+  .editor {
+    font-size: 18px;
+    padding: 32px 48px;
+  }
+}

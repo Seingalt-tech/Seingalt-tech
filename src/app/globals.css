@@ -76,6 +76,39 @@ body {
 .card p {
   color: #495057;
   line-height: 1.8;
+  margin-bottom: 1.5rem;
+}
+
+.button {
+  display: inline-block;
+  padding: 12px 24px;
+  background: #2c3e50;
+  color: white;
+  text-decoration: none;
+  border-radius: 6px;
+  font-weight: 500;
+  transition: background-color 0.2s, transform 0.2s;
+  border: none;
+  cursor: pointer;
+  font-size: 16px;
+}
+
+.button:hover:not(:disabled) {
+  background: #1a252f;
+  transform: translateY(-2px);
+}
+
+.button.secondary {
+  background: #6c757d;
+}
+
+.button.secondary:hover:not(:disabled) {
+  background: #5a6268;
+}
+
+.button:disabled {
+  opacity: 0.5;
+  cursor: not-allowed;
 }
 
 @media (max-width: 768px) {
