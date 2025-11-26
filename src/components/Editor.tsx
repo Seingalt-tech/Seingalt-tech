@@ -5,7 +5,7 @@ import styles from './Editor.module.css'
 
 interface EditorProps {
   initialContent?: string
-  onContentChange?: (content: string) => void
+  onContentChange?: (content: string, wordCount: number, charCount: number) => void
 }
 
 export default function Editor({ initialContent = '', onContentChange }: EditorProps) {
@@ -16,14 +16,19 @@ export default function Editor({ initialContent = '', onContentChange }: EditorP
   useEffect(() => {
     // Calculer le nombre de mots et de caractères
     const words = content.trim().split(/\s+/).filter(word => word.length > 0)
-    setWordCount(words.length)
-    setCharCount(content.length)
-  }, [content])
+    const newWordCount = words.length
+    const newCharCount = content.length
+
+    setWordCount(newWordCount)
+    setCharCount(newCharCount)
+
+    // Notifier le parent avec les stats
+    onContentChange?.(content, newWordCount, newCharCount)
+  }, [content, onContentChange])
 
   const handleChange = (e: React.ChangeEvent<HTMLTextAreaElement>) => {
     const newContent = e.target.value
     setContent(newContent)
-    onContentChange?.(newContent)
   }
 
   return (

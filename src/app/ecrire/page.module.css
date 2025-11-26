@@ -13,18 +13,42 @@
   background: #ffffff;
   border-bottom: 1px solid #e9ecef;
   box-shadow: 0 1px 3px rgba(0, 0, 0, 0.05);
+  gap: 16px;
 }
 
-.title {
+.titleInput {
+  flex: 1;
   margin: 0;
+  padding: 8px 12px;
   font-size: 20px;
   font-weight: 600;
   color: #212529;
+  border: 2px solid transparent;
+  border-radius: 6px;
+  background: transparent;
+  transition: border-color 0.2s, background-color 0.2s;
 }
 
-.nav {
+.titleInput:hover {
+  background: #f8f9fa;
+}
+
+.titleInput:focus {
+  outline: none;
+  border-color: #2c3e50;
+  background: #ffffff;
+}
+
+.headerActions {
   display: flex;
+  align-items: center;
   gap: 16px;
+}
+
+.saveStatus {
+  font-size: 14px;
+  color: #6c757d;
+  white-space: nowrap;
 }
 
 .link {
