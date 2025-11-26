@@ -26,9 +26,9 @@ export default function Home() {
             Retrouvez et organisez tous vos textes. Suivez votre progression
             et revisitez vos créations.
           </p>
-          <button className="button secondary" disabled>
-            Bientôt disponible
-          </button>
+          <Link href="/bibliotheque" className="button secondary">
+            Ma bibliothèque
+          </Link>
         </div>
       </section>
     </main>
