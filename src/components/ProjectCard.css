@@ -1,0 +1,116 @@
+.project-card {
+  display: block;
+  background: var(--color-card-bg);
+  padding: var(--spacing-md);
+  border-radius: var(--radius-md);
+  box-shadow: var(--shadow-sm);
+  transition:
+    transform var(--transition-fast),
+    box-shadow var(--transition-fast);
+  text-decoration: none;
+  color: inherit;
+  border: 1px solid transparent;
+}
+
+.project-card:hover {
+  transform: translateY(-4px);
+  box-shadow: var(--shadow-md);
+  border-color: var(--color-primary);
+}
+
+.project-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  gap: var(--spacing-sm);
+  margin-bottom: var(--spacing-sm);
+}
+
+.project-title {
+  font-family: var(--font-serif);
+  font-size: var(--font-size-xl);
+  color: var(--color-primary);
+  margin: 0;
+  flex: 1;
+}
+
+.project-status {
+  font-size: 0.75rem;
+  color: white;
+  padding: 0.25rem 0.75rem;
+  border-radius: var(--radius-sm);
+  font-weight: 600;
+  white-space: nowrap;
+}
+
+.project-description {
+  color: var(--color-secondary);
+  line-height: var(--line-height-relaxed);
+  margin-bottom: var(--spacing-md);
+}
+
+.project-meta {
+  display: flex;
+  flex-direction: column;
+  gap: var(--spacing-sm);
+}
+
+.project-tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: var(--spacing-xs);
+}
+
+.project-tag {
+  font-size: 0.85rem;
+  color: var(--color-tertiary);
+  background: var(--color-background);
+  padding: 0.25rem 0.5rem;
+  border-radius: var(--radius-sm);
+}
+
+.project-tag-more {
+  font-size: 0.85rem;
+  color: var(--color-primary);
+  font-weight: 600;
+}
+
+.project-progress-container {
+  display: flex;
+  align-items: center;
+  gap: var(--spacing-sm);
+}
+
+.project-progress-bar {
+  flex: 1;
+  height: 8px;
+  background: var(--color-background-secondary);
+  border-radius: var(--radius-sm);
+  overflow: hidden;
+}
+
+.project-progress-fill {
+  height: 100%;
+  background: linear-gradient(90deg, var(--color-primary), #3498db);
+  border-radius: var(--radius-sm);
+  transition: width var(--transition-normal);
+}
+
+.project-progress-text {
+  font-size: 0.85rem;
+  color: var(--color-primary);
+  font-weight: 600;
+  min-width: 40px;
+  text-align: right;
+}
+
+@media (max-width: 768px) {
+  .project-header {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .project-status {
+    align-self: flex-start;
+  }
+}

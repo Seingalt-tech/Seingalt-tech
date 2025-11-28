@@ -10,8 +10,8 @@ export default function Home() {
         <div className="card">
           <h2>Bienvenue</h2>
           <p>
-            Bienvenue dans votre espace d&apos;écriture. Ici, vous pouvez laisser libre cours à votre
-            créativité et explorer l&apos;univers des mots.
+            Bienvenue dans votre espace d&apos;écriture. Ici, vous pouvez laisser libre cours à
+            votre créativité et explorer l&apos;univers des mots.
           </p>
         </div>
 
